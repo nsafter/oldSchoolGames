@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+
+    <style>
+
+        #h1{
+                font-size: 50px;
+                font-family: cursive;
+                font-style: italic;
+                font-weight: 1000;
+                color:mistyrose;
+                text-align: center;
+                margin-top: 100px;
+                transition-property: font-size,color;
+                transition-duration: 0.7s;
+                transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.4);
+                transition-delay: 0s;  
+
+        }
+
+        #h1:hover{
+            color: khaki;
+            font-size: 90px;
+        }
+
+        #h{
+            font-style: italic;
+            font-family: cursive;
+            text-align: center;
+            color: aliceblue;
+            margin-top: 100px;
+            transition-property: font-size;
+            transition-duration: 0.7s;
+            transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.4);
+            transition-delay: 0s;  
+        }
+
+        #h:hover{
+            color: khaki;
+            font-size: 30px;
+        }
+
+        button{
+            width: 200px;
+            border:none;
+            height: 50px;
+            border-radius: 45px;
+            box-shadow: 2px 2px Lavender;
+            margin-left:650px;
+            transition-property: width,font-size,color,height,font-style,font-family,font-weight;
+            transition-duration: 0.7s;
+            transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.4);
+            transition-delay: 0s; 
+            font-size: 20px;
+            color:DarkKhaki;
+            background-color:beige;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 700;
+            vertical-align: center;
+            margin-left: 44%;
+            
+        }
+  
+        button:hover{
+            width: 300px;
+            height: 60px;
+            font-size: 30px;
+            color:darkseagreen;
+            font-style: italic;
+            font-family: cursive;
+            font-weight: 800;
+        }
+        body{
+             background: url(31.png) no-repeat center center fixed;
+             -webkit-background-size: cover;
+             -moz-background-size: cover;
+             -o-background-size: cover;
+              background-size: cover;
+        }
+
+        
+    </style>
+</head>
+<body >
+
+    <diV id="d1">
+
+        <h1 id="h1">TIC TAC TOE</h1>
+
+        <h2 id="h">HOW WOULD YOU LIKE TO PLAY THE GAME:</h2>
+
+        <button id="b1">Single Player</button>
+        <br>
+        <br>
+        <button id="b2">Double Player</button>
+
+    </diV>
+
+    <script type="text/javascript">
+        document.getElementById("b1").onclick = function () {
+        location.href = "single.html";};
+
+        document.getElementById("b2").onclick = function () {
+        location.href = "double2.html";};
+
+
+    </script>
+   </body>
+    </html>

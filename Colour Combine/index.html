@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Color the Squirtle</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            html {height: 100%;}
+            body{
+                background: url(indexBody.jpg);
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            div{
+                text-align: right;
+                width: 94vw;
+                height: 94vh;
+            }
+            h1{
+                font-size: 50px;
+            }
+            h2{
+                font-size: 40px;
+            }
+            h1, h2{
+                font-family: cursive;
+                font-style: italic;
+                font-weight: 1000;
+                transition-property: font-size,color;
+                transition-duration: 0.7s;
+                transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.4);
+                transition-delay: 0s;  
+            }
+            #start{  
+                color: white;
+                border-radius: 40px;
+                background-color: red;
+                font-size: 40px;
+                border: 1px solid white;
+                font-family: cursive;
+                font-style: italic;
+                margin-right: 12%;
+                padding-left: 4%;
+                padding-right: 4%;
+                margin-top: 4%;
+            }
+            
+            #start:hover{
+                font-size: 50px;
+                margin-right: 9%; 
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>New to the colour world??</h1>
+            <h2>Get to know more about colours</h2>
+            <button id="start">
+                Start
+                <i class="fa fa-play-circle-o" style="font-size:42px;color:white"></i>
+            </button>
+        </div>
+
+        <script type="text/javascript">
+            document.getElementById("start").onclick = function () {
+            location.href = "main.html";};
+        </script>
+
+    </body>
+</html>

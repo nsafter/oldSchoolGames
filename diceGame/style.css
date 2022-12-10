@@ -1,0 +1,62 @@
+body {
+  /* background-image: radial-gradient(white,grey,black); */
+  background: url("backgroundMain.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+#result {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: cursive;
+  font-style: italic;
+  font-weight: 600;
+  color: aquamarine;
+  margin-top: -2.5%;
+}
+
+.dice-area {
+  margin: 0px 40px;
+  text-align: center;
+  display: inline-block;
+}
+
+.dice-area p {
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgb(247, 6, 247);
+}
+
+img {
+  width: 300px;
+  height: 280px;
+  border-radius: 50px;
+  transition-property: height, width;
+  transition-duration: 0.7s;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.4);
+  transition-delay: 0s;
+}
+img:hover {
+  width: 300px;
+  height: 280px;
+}
+
+button {
+  height: 90px;
+  width: 200px;
+  border-radius: 20px;
+  font-size: 2rem;
+  font-family: cursive;
+  font-style: italic;
+  font-weight: 600;
+  border: none;
+  background-color: seagreen;
+  margin-left: 42%;
+  margin-top: 2%;
+  color: seashell;
+}

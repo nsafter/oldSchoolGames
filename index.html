@@ -1,0 +1,178 @@
+<!-- html 5 used -->
+<!DOCTYPE html>
+  <head>  
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="Maingamepage.css" />
+    <!-- fontawesome link used -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    
+    <title>Gamerz Hub</title>
+   
+  </head>
+  <body>
+
+    <video autoplay muted loop id="bg-video">
+      <source src="timelapse.mp4" type="video/mp4">
+  </video>
+
+    <!-- logo section -->
+    <h1  class="animate__animated animate__bounce logo">Gamerz Hub</h1>
+
+    <!-- navigation bar -->
+    <div class="topnav">
+      <a href="#">Home</a>
+      <a href="#">Trending</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      
+      <a style="float: right"
+        ><button type="button" name="button" class="loginbutton" data-toggle="modal" data-target="#loginModal">LogIn</button
+        ></a
+      >
+    </div>
+
+<div class="container-fluid">
+    <div class="modal fade" id="loginModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="imgcontainer">
+         
+          <img
+            src="loginImg.png"
+            alt="Avatar"
+            class="avatar"
+          />
+        </div>
+        <div class="form-title text-center">
+          <h4 style="font-size: 2.5rem;">Login</h4>
+        </div>
+        <div class="d-flex flex-column text-center">
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email1" placeholder="Email...">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password1" placeholder="Password...">
+            </div>
+            <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+          </form>
+          
+          <div class="text-center text-muted delimiter">
+               <p><span>or</span></p>
+          </div>
+          <div class="d-flex justify-content-center social-buttons">
+          <button type="button" class="btn btn-secondary btn-round" style="background-color:darkblue;" title="Facebook">
+              <i class="fab fa-facebook" style="font-size:24px;"></i>
+            </button>
+            <button type="button" class="btn btn-round" style="background-color:red" title="Google">
+              <i class="fab fa-google-plus-g" style="font-size:24px; color:white"></i>
+            </button>
+            <button type="button" class="btn btn-round" style="background-color:#0275d8;" title="Twitter">
+              <i class="fab fa-twitter" style="color:white;"></i>
+            </button>
+          </di>
+        </div>
+      </div>
+    </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <div class="signup-section">Not a member yet? <a href="#" class="text-info"> Sign Up</a>.</div>
+      </div>   
+  </div>
+</div>     
+</div>
+    
+    <!-- division of 2 columns -->
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card"> 
+          <h2><u>Color the Squirtle<i class="fas fa-palette"></i><i class="fas fa-paint-brush"></i></u></h2>
+          <div class="fakeimg" style="height: auto">
+            <div class="parent">
+              <div class="child bg-five">
+                <a href="Colour Combine\index.html" class="name">Click to Play</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h2><u>Burnout Revenge</u><i class="fas fa-flag-checkered"></i></h2>
+          <div class="fakeimg" style="height: auto">
+            <div class="parent">
+              <div class="child bg-one">
+                <a href="Traffic Racer\intro.html" class="name">Click to Play</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h2><u>Tic Tac Toe<i class="fas fa-times"></i><i class="fas fa-circle-notch"></i></u></h2>
+            <div class="fakeimg" style="height: auto">
+              <div class="parent">
+                <div class="child bg-two">
+                  <a href="Tic Tac Toe\FirstPage.html" class="name">Click to Play</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card">
+          <h2><u>Roll the Dice<i class="fas fa-dice"></i></u></h2>
+          <div class="fakeimg" style="height: auto">
+            <div class="parent">
+              <div class="child bg-three">
+                <a href="diceGame\firstpage.html" class="name">Click to Play</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h2><u>Hungry Snake</u><img src="snake.png" alt="" height="20px"></h2>
+          <div class="fakeimg" style="height: auto">
+            <div class="parent">
+              <div class="child bg-four">
+                <a href="Snake\index.html" class="name">Click to Play</a>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--left column class closed -->
+      <div class="rightcolumn">
+        <div class="card1">
+          <p class="effected">Getting bored..</p>
+          <p>Wanna get suggestions for goofing around??</p>
+        <button class="suggestion" onclick="getSuggestion()">Click me!!</button>
+        <p id="apiAct" class="animate__animated"></p>
+      </div>
+      </div>
+    </div>
+    <!--row class closed-->
+
+    <script src="App.js"></script>
+
+
+  </body>
+</html>

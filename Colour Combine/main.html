@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Color the Squirtle</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="stylesheetColor.css" />
+  </head>
+  <body>
+    <div class="mainHeading animate__animated animate__backInUp">
+      <p>Color the squirtle</p>
+    </div>
+
+    <div class="button_box">
+      <div class="btn btn-lg tail_color">Tail</div>
+      <div class="btn btn-lg body_color">Body</div>
+      <div class="btn btn-lg stomach_color">Stomach</div>
+      <div class="btn btn-lg eye_color">Eye</div>
+      <div class="btn btn-lg shell_color">Shell</div>
+    </div>
+
+    <audio id="blue_audio">
+      <source src="colors/blue.mp3" />
+    </audio>
+    <audio id="brown_audio">
+      <source src="colors/brown.mp3" />
+    </audio>
+    <audio id="lgreen_audio">
+      <source src="colors/lgreen.mp3" />
+    </audio>
+    <audio id="lime_audio">
+      <source src="colors/lime.mp3" />
+    </audio>
+    <audio id="orange_audio">
+      <source src="colors/orange.mp3" />
+    </audio>
+    <audio id="pink_audio">
+      <source src="colors/pink.mp3" />
+    </audio>
+    <audio id="purple_audio">
+      <source src="colors/purple.mp3" />
+    </audio>
+    <audio id="red_audio">
+      <source src="colors/red.mp3" />
+    </audio>
+    <audio id="yellow_audio">
+      <source src="colors/yellow.mp3" />
+    </audio>
+    <audio id="darkOrange_audio">
+      <source src="colors/darkOrange.mp3" />
+    </audio>
+    <audio id="gray_audio">
+      <source src="colors/gray.mp3" />
+    </audio>
+    <audio id="salmon_audio">
+      <source src="colors/salmon.mp3" />
+    </audio>
+    <audio id="crimson_audio">
+      <source src="colors/crimson.mp3" />
+    </audio>
+    <audio id="gold_audio">
+      <source src="colors/gold.mp3" />
+    </audio>
+    <audio id="lightSkin_audio">
+      <source src="colors/lightSkin.mp3" />
+    </audio>
+    <audio id="aqua_audio">
+      <source src="colors/aqua.mp3" />
+    </audio>
+    <audio id="lightBrown_audio">
+      <source src="colors/lightBrown.mp3" />
+    </audio>
+    <audio id="coral_audio">
+      <source src="colors/coral.mp3" />
+    </audio>
+    <audio id="springGreen_audio">
+      <source src="colors/springGreen.mp3" />
+    </audio>
+    <audio id="hotPink_audio">
+      <source src="colors/hotPink.mp3" />
+    </audio>
+
+    <audio id="completed">
+      <source src="completed.mp3" />
+    </audio>
+
+    <div class="tail_color_box">
+      <div class="btn btn-lg yellow" id="tail_yellow"></div>
+      <div class="btn btn-lg lime" id="tail_lime"></div>
+      <div class="btn btn-lg blue" id="tail_blue"></div>
+      <div class="btn btn-lg purple" id="tail_purple"></div>
+      <div class="btn btn-lg orange" id="tail_orange"></div>
+      <div class="btn btn-lg pink" id="tail_pink"></div>
+    </div>
+
+    <div class="body_color_box">
+      <div class="btn btn-lg blue" id="body_blue"></div>
+      <div class="btn btn-lg orange" id="body_orange"></div>
+      <div class="btn btn-lg yellow" id="body_yellow"></div>
+      <div class="btn btn-lg pink" id="body_pink"></div>
+      <div class="btn btn-lg lime" id="body_lime"></div>
+      <div class="btn btn-lg purple" id="body_purple"></div>
+    </div>
+
+    <div class="stomach_color_box">
+      <div class="btn btn-lg hotPink" id="stomach_pink"></div>
+      <div class="btn btn-lg lightSkin" id="stomach_lightSkin"></div>
+      <div class="btn btn-lg salmon" id="stomach_salmon"></div>
+      <div class="btn btn-lg darkOrange" id="stomach_darkOrange"></div>
+      <div class="btn btn-lg crimson" id="stomach_crimson"></div>
+      <div class="btn btn-lg gold" id="stomach_gold"></div>
+    </div>
+
+    <div class="eye_color_box">
+      <div class="btn btn-lg aqua" id="eye_aqua"></div>
+      <div class="btn btn-lg brown" id="eye_brown"></div>
+      <div class="btn btn-lg lgreen" id="eye_lgreen"></div>
+      <div class="btn btn-lg gray" id="eye_gray"></div>
+      <div class="btn btn-lg yellow" id="eye_yellow"></div>
+      <div class="btn btn-lg darkOrange" id="eye_darkOrange"></div>
+    </div>
+
+    <div class="shell_color_box">
+      <div class="btn btn-lg red" id="shell_red"></div>
+      <div class="btn btn-lg gold" id="shell_gold"></div>
+      <div class="btn btn-lg aqua" id="shell_aqua"></div>
+      <div class="btn btn-lg coral" id="shell_coral"></div>
+      <div class="btn btn-lg springGreen" id="shell_springGreen"></div>
+      <div class="btn btn-lg lightBrown" id="shell_lightBrown"></div>
+    </div>
+
+    <div class="squirtle" id="sq">
+      <div class="tail"></div>
+      <div class="body">
+        <div class="stomach"></div>
+        <div class="shell"></div>
+      </div>
+      <div class="head">
+        <div class="eye"></div>
+        <div class="eye"></div>
+        <div class="mouth"></div>
+      </div>
+      <div class="leg back"></div>
+      <div class="leg"></div>
+      <div class="arm back"></div>
+      <div class="arm"></div>
+    </div>
+
+    <button type="button" class="btn btn-lg" id="done">
+      <a href="#sq">Done</a>
+    </button>
+
+    <button
+      type="button"
+      id="again"
+      class="btn btn-lg"
+      data-toggle="modal"
+      data-target="#myModal"
+    >
+      Play
+      <i class="fa fa-repeat" aria-hidden="true" style="font-size: 36px"></i>
+    </button>
+
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog modal-confirm">
+        <div class="modal-content">
+          <div class="modal-header flex-column">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Do you wanna play again?</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn" onclick="check()">
+              <i
+                class="fas fa-check-circle"
+                style="color: green; font-size: 72px"
+              ></i>
+            </button>
+            <button type="button" class="btn" onclick="cross()">
+              <i
+                class="fas fa-times-circle"
+                style="color: red; font-size: 72px"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scriptColor.js" async defer></script>
+  </body>
+</html>

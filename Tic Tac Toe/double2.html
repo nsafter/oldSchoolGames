@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+
+    <style>
+        body{
+            background: url(double.png) no-repeat center center fixed;
+             -webkit-background-size: cover;
+             -moz-background-size: cover;
+             -o-background-size: cover;
+              background-size: cover;
+              backdrop-filter: blur(4px);
+        }
+
+        #d1{
+            width: 100%;
+            height: 500px;
+        }
+        #a{
+            margin-top: 100px;
+            font-size: 40px;
+            font-style: italic;
+            font-family: cursive;
+            margin-left: 35%;
+            transition-property: font-size,color;
+            transition-duration: 0.7s;
+            transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.4);
+            transition-delay: 0s;
+            color:cadetblue;
+        }
+        #a:hover{
+            font-size: 50px;
+            color: cornsilk;
+            
+        }
+        #h1{
+            font-style: italic;
+            font-family: cursive;
+            font-size: 28px;
+            margin-left: 40%;
+            transition-property: font-size,color;
+            transition-duration: 0.7s;
+            transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.4);
+            transition-delay: 0s;
+            color:darkslategrey;
+        }
+        #h1:hover{
+            font-size:35px ;
+            color: greenyellow;
+        }
+        #h2{
+            font-style: italic;
+            font-family: cursive;
+            font-size: 28px;
+            margin-left: 40%;
+            transition-property: font-size,color;
+            transition-duration: 0.7s;
+            transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.4);
+            transition-delay: 0s;
+            color:darkslategrey;
+        }
+        #h2:hover{
+            font-size:35px ;
+            color: greenyellow;
+        }
+        #inp1{
+            margin-left: 45%;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            font-size: 20px;
+            font-family: cursive;
+            font-style: italic;
+            width: 250px;
+            color: hotpink;
+        }
+        #inp2{
+            margin-left: 45%;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            font-size: 20px;
+            font-family: cursive;
+            font-style: italic;
+            width: 250px;
+            color: hotpink;
+        }
+        #b1{
+            margin-left: 49%;
+            border-radius: 20px;
+            border: none;
+            background-color: aquamarine;
+            height: 30px;
+            width: 100px;
+            transition-property: height,width;
+            transition-duration: 0.7s;
+            transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.4);
+            transition-delay: 0s;
+
+        }
+        #b1:hover{
+            height: 35px;
+            width: 150px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="a">You have choosen Double Player:</h1>
+    <div id="d1">
+        
+        <h1 id="h1">Enter your X Player name :</h1>
+        <input type="text" id="inp1">
+        <br>
+        <br>
+        <h1 id="h2">Enter your 0 Player name :</h1>
+        <input type="text" id="inp2">
+        <br>
+        <br>
+        <button id="b1">Start the game</button>
+    </div>
+    <script>
+        document.getElementById("b1").onclick = function () {
+        location.href = "doublePlayer.html";};
+    </script>
+</body>
+</html>

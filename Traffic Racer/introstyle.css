@@ -1,0 +1,88 @@
+html {
+  background-image: linear-gradient(to right, black, darkblue);
+  /* color: white; */
+  font-size: 2rem;
+}
+
+body {
+  margin: 0;
+}
+
+.faketext {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+}
+
+.parent {
+  height: 100vh;
+  width: 100vw;
+  /* margin-bottom: 15px; */
+  overflow: hidden;
+}
+
+.child {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+
+.bg-8 {
+  background-image: url(background.jpg);
+  width: 100vw;
+}
+
+.parent:hover .child,
+.parent:focus .child {
+  transform: scale(1.2);
+}
+
+.parent:hover .child:before,
+.parent:focus .child:before {
+  display: block;
+}
+
+.parent:hover a,
+.parent:focus a {
+  display: block;
+}
+
+.child:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient(to right, black 50%, red);
+  opacity: 0.4;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+div button {
+  height: 2rem;
+  font-size: 1rem;
+  background-color: chartreuse;
+  border-radius: 25px;
+  border: chartreuse;
+  animation: mymove 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes mymove {
+  from {
+    transform: scale(1.3);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TBurnout Revenge</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <audio id="myaudio"> 
+      <source src="carnoise.mp3" />
+    </audio>
+    <div id="scorediv">Score : <span id="score1">0</span></div>
+    <div class="snowflakes" aria-hidden="true">
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+    </div>
+    <div id="container">  
+      <div id="line_1" class="line"></div>
+      <div id="line_2" class="line"></div>
+      <div id="line_3" class="line"></div>
+      <div id="car" class="car">
+        <div class="f_glass"></div>
+        <div class="b_glass"></div>
+        <div class="f_light_l"></div>
+        <div class="f_light_r"></div>
+        <div class="f_tyre_l"></div>
+        <div class="f_tyre_r"></div>
+        <div class="b_tyre_l"></div>
+        <div class="b_tyre_r"></div>
+      </div>
+      <div id="car_1" class="car">
+        <div class="f_glass"></div>
+        <div class="b_glass"></div>
+        <div class="f_light_l"></div>
+        <div class="f_light_r"></div>
+        <div class="f_tyre_l"></div>
+        <div class="f_tyre_r"></div>
+        <div class="b_tyre_l"></div>
+        <div class="b_tyre_r"></div>
+      </div>
+      <div id="car_2" class="car">
+        <div class="f_glass"></div>
+        <div class="b_glass"></div>
+        <div class="f_light_l"></div>
+        <div class="f_light_r"></div>
+        <div class="f_tyre_l"></div>
+        <div class="f_tyre_r"></div>
+        <div class="b_tyre_l"></div>
+        <div class="b_tyre_r"></div>
+      </div>
+      <div id="car_3" class="car">
+        <div class="f_glass"></div>
+        <div class="b_glass"></div>
+        <div class="f_light_l"></div>
+        <div class="f_light_r"></div>
+        <div class="f_tyre_l"></div>
+        <div class="f_tyre_r"></div>
+        <div class="b_tyre_l"></div>
+        <div class="b_tyre_r"></div>
+      </div>
+      <div id="car_4" class="car">
+        <div class="f_glass"></div>
+        <div class="b_glass"></div>
+        <div class="f_light_l"></div>
+        <div class="f_light_r"></div>
+        <div class="f_tyre_l"></div>
+        <div class="f_tyre_r"></div>
+        <div class="b_tyre_l"></div>
+        <div class="b_tyre_r"></div>
+      </div>
+      <div id="restart_div">
+        <button id="restart">
+          Game Over <br />
+          <small class="small_text">(press Enter for NEW GAME)</small>
+        </button>
+        <div id="score_div">Score: <span id="score">0</span></div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
